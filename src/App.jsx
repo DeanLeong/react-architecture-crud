@@ -1,9 +1,9 @@
 import React from 'react'
 import './App.css'
-import Home from './components/Home/Home'
+import Home from './screens/Home/Home'
 import Products from './screens/Products/Products'
-import ProductCreate from './components/ProductCreate/ProductCreate'
-import ProductEdit from './components/ProductEdit/ProductEdit'
+import ProductCreate from './screens/ProductCreate/ProductCreate'
+import ProductEdit from './screens/ProductEdit/ProductEdit'
 import ProductDetail from './screens/ProductDetail/ProductDetail'
 import { Route, Switch } from 'react-router-dom'
 
