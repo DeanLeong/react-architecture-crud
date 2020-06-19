@@ -11,9 +11,9 @@ const App = () => {
   return (
     <div className="app">
       <Switch>
-        <Route exact path="/" render={props => <Home />} />
-        <Route exact path="/products" render={props => <Products />} />
-        <Route exact path="/add-product" render={props => <ProductCreate />} />
+        <Route exact path="/" component={Home} />
+        <Route exact path="/products" component={Products} />
+        <Route exact path="/add-product" component={ProductCreate} />
         <Route exact path="/products/:id/edit" component={ProductEdit} />
         <Route exact path="/products/:id" component={ProductDetail} />
       </Switch>
