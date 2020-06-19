@@ -1,34 +1,50 @@
-import productsJSON from '../data/products.json'
-import { v4 as uuidv4 } from 'uuid'
+import axios from 'axios'
+
+const apiUrl = `https://products-api-01.herokuapp.com/api`
 
 export const getProducts = async () => {
-  const products = productsJSON
-  return products
+  try {
+    const response = await axios(`${apiUrl}/products`)
+    const products = response.data
+    return products
+  } catch (error) {
+    throw error
+  }
 }
 
 export const getProduct = async id => {
-  const products = productsJSON
-  const product = products.filter(product => product._id === id)[0]
-  return product
+  try {
+    const response = await axios(`${apiUrl}/products/${id}`)
+    const product = response.data
+    return product
+  } catch (error) {
+    throw error
+  }
 }
 
 export const createProduct = async product => {
-  const products = productsJSON
-  product._id = uuidv4()
-  products.push(product)
-  return products
+  try {
+    const response = await axios.post(`${apiUrl}/products`, product)
+    return response.data
+  } catch (error) {
+    throw error
+  }
 }
 
 export const updateProduct = async (id, product) => {
-  const products = productsJSON
-  const productIndex = products.findIndex(product => product._id === id)
-  products[productIndex] = product
-  return products
+  try {
+    const response = await axios.put(`${apiUrl}/products/${id}`, product)
+    return response.data
+  } catch (error) {
+    throw error
+  }
 }
 
 export const deleteProduct = async id => {
-  const products = productsJSON
-  const productIndex = products.findIndex(product => product._id === id)
-  products.splice(productIndex, 1)
-  return products
+  try {
+    const response = await axios.delete(`${apiUrl}/products/${id}`)
+    return response.data
+  } catch (error) {
+    throw error
+  }
 }

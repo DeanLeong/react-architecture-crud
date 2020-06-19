@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import './ProductCreate.css'
-import Layout from './shared/Layout'
+import Layout from '../../components/shared/Layout/Layout'
 import { Redirect } from 'react-router-dom'
-import { createProduct } from '../services/products'
+import { createProduct } from '../../services/products'
 
 class ProductCreate extends Component {
     constructor() {

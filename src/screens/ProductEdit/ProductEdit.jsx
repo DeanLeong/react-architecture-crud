@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import './ProductEdit.css'
 import { Redirect } from 'react-router-dom'
-import Layout from './shared/Layout'
-import { getProduct, updateProduct } from '../services/products'
+import Layout from '../../components/shared/Layout/Layout'
+import { getProduct, updateProduct } from '../../services/products'
 
 class ProductEdit extends Component {
     constructor(props) {
