@@ -1,7 +1,7 @@
 import React from 'react'
 import './Home.css'
-import ProductCards from './ProductCards'
-import Layout from './shared/Layout'
+import ProductCards from '../ProductCards/ProductCards'
+import Layout from '../shared/Layout/Layout'
 
 const Home = () => {
   return (

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './ProductCards.css';
-import ProductCard from './ProductCard'
-import { getProducts } from '../services/products'
+import ProductCard from '../ProductCard/ProductCard'
+import { getProducts } from '../../services/products'
 
 class ProductCards extends Component {
   constructor() {
