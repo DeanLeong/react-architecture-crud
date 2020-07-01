@@ -24,7 +24,7 @@ Most modern web applications now adays have some resource or thing that we want 
 
 ## (C)reate
 
-In our app implement the ability to (C)reate new products in the `ProductCreate` component which uses the `createProduct()` service.
+In our app we implement the ability to (C)reate new products in the `ProductCreate` component which uses the `createProduct()` service.
 
 The `ProductCreate` component is a react form that user's can fill out. We then take that data and call `createProduct()` which is an axios post request to the API. The API responds with the newly created product.
 
