@@ -75,9 +75,9 @@ export const getProduct = async id => {
 
 ## Conclusion
 
-Don't get to caught up with the concept of CRUD, at the end of the day we're just teaching you how to build the following in react:
+Don't get to caught up with the concept of CRUD (it will come with time), at the end of the day we're just teaching you how to build the following in react:
 
 - the ability to create a new product
-- the ability to read a product or products (this one was already covered in a previos lesson)
+- the ability to read a product or products (this one was already covered in a previous lesson)
 - the ability to edit a product
 - the ability to delete a product
