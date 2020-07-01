@@ -18,7 +18,7 @@ By the end of this, developers should be able to:
 
 CRUD stands for (C)reate, (R)ead, (U)pdate, and (D)elete. 
 
-**CRUD is a concept.**
+### CRUD is a concept!
 
 Most modern web applications now adays have some resource or thing that we want to perform "CRUD" operations on. In our product app, we have the ability to (c)reate new products, (u)pdate or edit a specific product, (r)ead or see all products or an individual product, and the ability to (d)elete a product. CRUD is a core **concept** that is built into most applications we build so it is essential as developers to learn how to implement it on a programmatic level.
 
