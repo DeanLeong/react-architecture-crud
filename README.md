@@ -45,6 +45,8 @@ export const createProduct = async product => {
 
 ## (R)ead
 
+The Products component shows all the products. This is the (R)ead in CRUD.
+
 ![](https://git.generalassemb.ly/bruno/assets/blob/master/Products.gif)
 
 When we show all the products on the products screen (Products.jsx) we call the `getProducts()` service which is an axios request to the API. The response from the API is an array with all the products.
