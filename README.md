@@ -81,6 +81,10 @@ export const getProduct = async id => {
 }
 ```
 
+## (U)pdate
+
+## (D)elete
+
 ## Conclusion
 
 Don't get to caught up with the concept of CRUD (it will come with time), at the end of the day we're just teaching you how to build the following in react:
