@@ -30,11 +30,43 @@ The `ProductCreate` component is a react form that user's can fill out. We then 
 
 
 src/services/products.js
-```
+```js
 export const createProduct = async product => {
   try {
     const response = await axios.post(`${apiUrl}/products`, product)
     return response.data
+  } catch (error) {
+    throw error
+  }
+}
+```
+
+## (R)ead
+
+When we show all the products on the products screen (Products.jsx) we call the `getProducts()` service which is an axios request to the API. The response from the API is an array with all the products.
+
+src/services/products.js
+```js
+export const getProducts = async () => {
+  try {
+    const response = await axios(`${apiUrl}/products`)
+    const products = response.data
+    return products
+  } catch (error) {
+    throw error
+  }
+}
+```
+
+When we click on a specific product we see that specific product (ProductDetail.jsx). The `ProductDetail` component makes a call to the `getProduct()` service passing in the id of the specific product it wants to see. The `getProduct()` service makes an axios call to the API with the specific id of the product it wants back. The API responds with the specific product.
+
+src/services/products.js
+```js
+export const getProduct = async id => {
+  try {
+    const response = await axios(`${apiUrl}/products/${id}`)
+    const product = response.data
+    return product
   } catch (error) {
     throw error
   }
